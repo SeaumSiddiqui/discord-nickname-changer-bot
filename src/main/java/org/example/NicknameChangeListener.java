@@ -31,6 +31,7 @@ public class NicknameChangeListener extends ListenerAdapter {
             if (member != null) {
                 try {
                     String oldName = member.getNickname() != null? member.getNickname() : member.getUser().getName();
+                    // change nickname
                     guild.modifyNickname(member, newName).queue(response->
                             sendResponse(guild, channel, member.getUser(), oldName, newName)
                     );

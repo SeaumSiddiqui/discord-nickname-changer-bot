@@ -7,7 +7,11 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class Main {
     public static void main(String[] args) {
-        final String token = "";
+        final String token = System.getenv("BOT_TOKEN");
+        if (token == null || token.isEmpty()) {
+            System.err.println("Bot token not found");
+            return;
+        }
         SlashCommandListener slashCommandListener = new SlashCommandListener();
         NicknameChangeListener nicknameChangeListener = new NicknameChangeListener(slashCommandListener);
 
