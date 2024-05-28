@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class Main {
     public static void main(String[] args) {
-        final String token = "MTI0NDMwMjI5MjU2MDM4NDExMA.GpdgPK.tBDlrwndNEV68U70n96bAEOXSaOG2jqI_1ndD8";
+        final String token = "";
         SlashCommandListener slashCommandListener = new SlashCommandListener();
         NicknameChangeListener nicknameChangeListener = new NicknameChangeListener(slashCommandListener);
 
