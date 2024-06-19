@@ -6,7 +6,7 @@ This is a simple Discord bot created using Java Discord API (JDA) to help users 
 ## Setup the bot
 * Use the following link format to invite the bot to your server:
   <pre>
-    [https://discord.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS](https://discord.com/oauth2/authorize?client_id=1244302292560384110)
+    https://discord.com/oauth2/authorize?client_id=1244302292560384110
   </pre>
 * In any text channel, use slash command `/aqiqah` to set the current text channel as the listening channel for nickname changes.
 * The bot will then respond, confirming that it will now listen to this channel for nickname changes.
